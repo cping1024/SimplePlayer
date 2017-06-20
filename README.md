@@ -1,2 +1,2 @@
 # SimplePlayer
-Usr Qt ffmpeg and openCV impelement a simple play, can read rtsp/local file and render
+Use Qt ffmpeg and openCV impelement a simple play, can read rtsp/local file and render
