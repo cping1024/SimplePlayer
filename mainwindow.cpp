@@ -90,11 +90,13 @@ void MainWindow::handleDecodeCallBack(void *buffer, void *frame, int width, int 
     }
 
     cv::Mat image = cv::Mat(height, width, CV_8UC3, buffer, avframe->linesize[0]);
+    printf ("decode callback frame w [%d], h[%d].\n", image.cols, image.rows);
     if (!image.data) {
         return;
     }
-    cv::imshow("frame", image);
-    cv::waitKey(1);
+
+    //cv::imshow("frame", image);
+    //cv::waitKey(1);
 
 
 //    cv::cvtColor(image, image, CV_BGR2RGB);

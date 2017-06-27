@@ -26,20 +26,17 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-###############################opencv########################################
 
-INCLUDEPATH += C:\Users\allen\deps\opencv\include\opencv2\
-              C:\Users\allen\deps\opencv\\include\opencv\
-             C:\Users\allen\deps\opencv\include
-LIBS+=C:\Users\allen\deps\opencv\lib\libopencv_core2410.dll\
-      C:\Users\allen\deps\opencv\lib\libopencv_highgui2410.dll\
-      C:\Users\allen\deps\opencv\lib\libopencv_imgproc2410.dll\
+INCLUDEPATH +=/home/sensenets/workspace/SN_Pose/3rdparty/ffmpeg/include
+LIBS +=/home/sensenets/workspace/SN_Pose/3rdparty/ffmpeg/lib/libavcodec.so\
+    /home/sensenets/workspace/SN_Pose/3rdparty/ffmpeg/lib/libavfilter.so\
+    /home/sensenets/workspace/SN_Pose/3rdparty/ffmpeg/lib/libavformat.so\
+    /home/sensenets/workspace/SN_Pose/3rdparty/ffmpeg/lib/libswscale.so\
+    /home/sensenets/workspace/SN_Pose/3rdparty/ffmpeg/lib/libavutil.so\
 
-###############################ffmpeg########################################
+INCLUDEPATH +=/usr/include/opencv2\
+              /usr/include/opencv
+LIBS+=/usr/lib/x86_64-linux-gnu/libopencv_highgui.so\
+      /usr/lib/x86_64-linux-gnu/libopencv_core.so\
+      /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so\
 
-INCLUDEPATH += C:\Users\allen\deps\ffmpeg\include
-LIBS += C:\Users\allen\deps\ffmpeg\lib\SN_avcodec.dll\
-        C:\Users\allen\deps\ffmpeg\lib\SN_avfilter.dll\
-        C:\Users\allen\deps\ffmpeg\lib\SN_avformat.dll\
-        C:\Users\allen\deps\ffmpeg\lib\SN_swscale.dll\
-        C:\Users\allen\deps\ffmpeg\lib\SN_avutil.dll\

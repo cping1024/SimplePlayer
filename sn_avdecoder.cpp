@@ -256,12 +256,12 @@ void SN_AVDecoder::unInitDecode()
 
 int SN_AVDecoder::initDecodeThread()
 {
-    std::thread decode_thread(decode, this);
+    std::thread decode_thread(&SN_AVDecoder::decode, this);
     if (decode_thread.joinable()) {
         decode_thread.detach();
     }
 
-    std::thread read_thread(readFrame, this);
+    std::thread read_thread(&SN_AVDecoder::readFrame, this);
     if (read_thread.joinable()) {
         read_thread.detach();
     }
